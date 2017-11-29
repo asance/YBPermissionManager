@@ -230,6 +230,7 @@
         appName = [infoDictionary objectForKey:@"CFBundleDisplayName"];
     }
     _appName = [appName copy];
+    [self setRemindAttributedText];
 }
 - (NSString *)titleLabelString{
     if(YBPermissionTypeContact==self.permissionType){
