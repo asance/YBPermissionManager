@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "YBPermissionManager"
-s.version      = "1.0.2"
+s.version      = "1.0.3"
 s.summary      = "base permission settings for ubank project."
 
 s.description  = <<-DESC
