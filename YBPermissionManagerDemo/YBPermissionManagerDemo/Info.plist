@@ -4,6 +4,14 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>video</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>photo</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>location</string>
+	<key>NSContactsUsageDescription</key>
+	<string>contact</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
