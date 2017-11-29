@@ -9,7 +9,6 @@
 #import "YBPermissionContactWorker.h"
 #import <UIKit/UIKit.h>
 #import <AddressBook/AddressBook.h>
-#import <sqlite3.h>
 #import <Contacts/Contacts.h>
 
 #define kSystemVersion      (9)
