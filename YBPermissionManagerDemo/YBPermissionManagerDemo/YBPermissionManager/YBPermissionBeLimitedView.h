@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, YBPermissionType) {
 @property(strong, nonatomic) UIButton *confirmButton;
 
 @property(assign, nonatomic) YBPermissionType permissionType;
-@property(copy, nonatomic) NSString appName;
+@property(copy, nonatomic) NSString *appName;
 
 /**
  * When the user clicks the "Authorize" button will call back,

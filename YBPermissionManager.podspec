@@ -25,7 +25,7 @@ s.platform     = :ios
 s.ios.deployment_target = "8.0"
 s.source       = { :git => "https://github.com/asance/YBBaseCategory.git", :tag => "v#{s.version}" }
 s.source_files  =  "YBPermissionManagerDemo/YBPermissionManagerDemo/YBPermissionManager/*.{h,m}"
-s.frameworks = "UIKit", "CoreGraphics", "Foundation", "YBBaseCategory"
+s.frameworks = "UIKit", "CoreGraphics", "Foundation", "AddressBook",  "sqlite3", "Contacts", "CoreLocation", "Photos", "AssetsLibrary", "AVFoundation", "YBBaseCategory"
 s.requires_arc = true
 
 end
