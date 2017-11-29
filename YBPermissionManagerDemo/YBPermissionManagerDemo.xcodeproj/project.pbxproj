@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		858F6E2F0EA17D0BF5EC84CB /* libPods-YBPermissionManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BBD93B9907A8A9D45DAD65 /* libPods-YBPermissionManagerDemo.a */; };
+		EC3E08021FCE5EE100C0D495 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E08011FCE5EE100C0D495 /* AppDelegate.m */; };
+		EC3E08051FCE5EE100C0D495 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E08041FCE5EE100C0D495 /* ViewController.m */; };
+		EC3E080A1FCE5EE100C0D495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E08091FCE5EE100C0D495 /* Assets.xcassets */; };
+		EC3E080D1FCE5EE100C0D495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E080B1FCE5EE100C0D495 /* LaunchScreen.storyboard */; };
+		EC3E08101FCE5EE100C0D495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E080F1FCE5EE100C0D495 /* main.m */; };
+		EC3E081A1FCE5EE100C0D495 /* YBPermissionManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E08191FCE5EE100C0D495 /* YBPermissionManagerDemoTests.m */; };
+		EC3E08311FCE5F1D00C0D495 /* YBPermissionBeLimitedView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E08261FCE5F1C00C0D495 /* YBPermissionBeLimitedView.m */; };
+		EC3E08321FCE5F1D00C0D495 /* YBPermissionContactWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E08281FCE5F1C00C0D495 /* YBPermissionContactWorker.m */; };
+		EC3E08331FCE5F1D00C0D495 /* YBPermissionLocationWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E082A1FCE5F1C00C0D495 /* YBPermissionLocationWorker.m */; };
+		EC3E08341FCE5F1D00C0D495 /* YBPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E082C1FCE5F1C00C0D495 /* YBPermissionManager.m */; };
+		EC3E08351FCE5F1D00C0D495 /* YBPermissionPhotoWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E082E1FCE5F1C00C0D495 /* YBPermissionPhotoWorker.m */; };
+		EC3E08361FCE5F1D00C0D495 /* YBPermissionVideoWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3E08301FCE5F1C00C0D495 /* YBPermissionVideoWorker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC3E08161FCE5EE100C0D495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3E07F51FCE5EE000C0D495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC3E07FC1FCE5EE000C0D495;
+			remoteInfo = YBPermissionManagerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BA0757A96B05250996B6F6A /* Pods-YBPermissionManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBPermissionManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBPermissionManagerDemo/Pods-YBPermissionManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		39BBD93B9907A8A9D45DAD65 /* libPods-YBPermissionManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBPermissionManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D577732074BCA49C8E7B85 /* Pods-YBPermissionManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBPermissionManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBPermissionManagerDemo/Pods-YBPermissionManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EC3E07FD1FCE5EE000C0D495 /* YBPermissionManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBPermissionManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3E08001FCE5EE000C0D495 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC3E08011FCE5EE100C0D495 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC3E08031FCE5EE100C0D495 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC3E08041FCE5EE100C0D495 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC3E08091FCE5EE100C0D495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC3E080C1FCE5EE100C0D495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC3E080E1FCE5EE100C0D495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3E080F1FCE5EE100C0D495 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC3E08151FCE5EE100C0D495 /* YBPermissionManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBPermissionManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3E08191FCE5EE100C0D495 /* YBPermissionManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBPermissionManagerDemoTests.m; sourceTree = "<group>"; };
+		EC3E081B1FCE5EE100C0D495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3E08251FCE5F1C00C0D495 /* YBPermissionBeLimitedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPermissionBeLimitedView.h; sourceTree = "<group>"; };
+		EC3E08261FCE5F1C00C0D495 /* YBPermissionBeLimitedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPermissionBeLimitedView.m; sourceTree = "<group>"; };
+		EC3E08271FCE5F1C00C0D495 /* YBPermissionContactWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPermissionContactWorker.h; sourceTree = "<group>"; };
+		EC3E08281FCE5F1C00C0D495 /* YBPermissionContactWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPermissionContactWorker.m; sourceTree = "<group>"; };
+		EC3E08291FCE5F1C00C0D495 /* YBPermissionLocationWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPermissionLocationWorker.h; sourceTree = "<group>"; };
+		EC3E082A1FCE5F1C00C0D495 /* YBPermissionLocationWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPermissionLocationWorker.m; sourceTree = "<group>"; };
+		EC3E082B1FCE5F1C00C0D495 /* YBPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPermissionManager.h; sourceTree = "<group>"; };
+		EC3E082C1FCE5F1C00C0D495 /* YBPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPermissionManager.m; sourceTree = "<group>"; };
+		EC3E082D1FCE5F1C00C0D495 /* YBPermissionPhotoWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPermissionPhotoWorker.h; sourceTree = "<group>"; };
+		EC3E082E1FCE5F1C00C0D495 /* YBPermissionPhotoWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPermissionPhotoWorker.m; sourceTree = "<group>"; };
+		EC3E082F1FCE5F1C00C0D495 /* YBPermissionVideoWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPermissionVideoWorker.h; sourceTree = "<group>"; };
+		EC3E08301FCE5F1C00C0D495 /* YBPermissionVideoWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPermissionVideoWorker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC3E07FA1FCE5EE000C0D495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858F6E2F0EA17D0BF5EC84CB /* libPods-YBPermissionManagerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3E08121FCE5EE100C0D495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DF0B9D10E95BA942278793A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39BBD93B9907A8A9D45DAD65 /* libPods-YBPermissionManagerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8BC4D3F05F8DFD10C966128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79D577732074BCA49C8E7B85 /* Pods-YBPermissionManagerDemo.debug.xcconfig */,
+				1BA0757A96B05250996B6F6A /* Pods-YBPermissionManagerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC3E07F41FCE5EE000C0D495 = {
+			isa = PBXGroup;
+			children = (
+				EC3E07FF1FCE5EE000C0D495 /* YBPermissionManagerDemo */,
+				EC3E08181FCE5EE100C0D495 /* YBPermissionManagerDemoTests */,
+				EC3E07FE1FCE5EE000C0D495 /* Products */,
+				D8BC4D3F05F8DFD10C966128 /* Pods */,
+				8DF0B9D10E95BA942278793A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC3E07FE1FCE5EE000C0D495 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E07FD1FCE5EE000C0D495 /* YBPermissionManagerDemo.app */,
+				EC3E08151FCE5EE100C0D495 /* YBPermissionManagerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3E07FF1FCE5EE000C0D495 /* YBPermissionManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E08241FCE5F1C00C0D495 /* YBPermissionManager */,
+				EC3E08001FCE5EE000C0D495 /* AppDelegate.h */,
+				EC3E08011FCE5EE100C0D495 /* AppDelegate.m */,
+				EC3E08031FCE5EE100C0D495 /* ViewController.h */,
+				EC3E08041FCE5EE100C0D495 /* ViewController.m */,
+				EC3E08091FCE5EE100C0D495 /* Assets.xcassets */,
+				EC3E080B1FCE5EE100C0D495 /* LaunchScreen.storyboard */,
+				EC3E080E1FCE5EE100C0D495 /* Info.plist */,
+				EC3E080F1FCE5EE100C0D495 /* main.m */,
+			);
+			path = YBPermissionManagerDemo;
+			sourceTree = "<group>";
+		};
+		EC3E08181FCE5EE100C0D495 /* YBPermissionManagerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E08191FCE5EE100C0D495 /* YBPermissionManagerDemoTests.m */,
+				EC3E081B1FCE5EE100C0D495 /* Info.plist */,
+			);
+			path = YBPermissionManagerDemoTests;
+			sourceTree = "<group>";
+		};
+		EC3E08241FCE5F1C00C0D495 /* YBPermissionManager */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E08251FCE5F1C00C0D495 /* YBPermissionBeLimitedView.h */,
+				EC3E08261FCE5F1C00C0D495 /* YBPermissionBeLimitedView.m */,
+				EC3E08271FCE5F1C00C0D495 /* YBPermissionContactWorker.h */,
+				EC3E08281FCE5F1C00C0D495 /* YBPermissionContactWorker.m */,
+				EC3E08291FCE5F1C00C0D495 /* YBPermissionLocationWorker.h */,
+				EC3E082A1FCE5F1C00C0D495 /* YBPermissionLocationWorker.m */,
+				EC3E082B1FCE5F1C00C0D495 /* YBPermissionManager.h */,
+				EC3E082C1FCE5F1C00C0D495 /* YBPermissionManager.m */,
+				EC3E082D1FCE5F1C00C0D495 /* YBPermissionPhotoWorker.h */,
+				EC3E082E1FCE5F1C00C0D495 /* YBPermissionPhotoWorker.m */,
+				EC3E082F1FCE5F1C00C0D495 /* YBPermissionVideoWorker.h */,
+				EC3E08301FCE5F1C00C0D495 /* YBPermissionVideoWorker.m */,
+			);
+			path = YBPermissionManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC3E07FC1FCE5EE000C0D495 /* YBPermissionManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3E081E1FCE5EE100C0D495 /* Build configuration list for PBXNativeTarget "YBPermissionManagerDemo" */;
+			buildPhases = (
+				36554808555B60C5AE07ABAB /* [CP] Check Pods Manifest.lock */,
+				EC3E07F91FCE5EE000C0D495 /* Sources */,
+				EC3E07FA1FCE5EE000C0D495 /* Frameworks */,
+				EC3E07FB1FCE5EE000C0D495 /* Resources */,
+				D197E429FEA371C835D46BE6 /* [CP] Embed Pods Frameworks */,
+				CF36FA434D5704D7C76ADCD1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YBPermissionManagerDemo;
+			productName = YBPermissionManagerDemo;
+			productReference = EC3E07FD1FCE5EE000C0D495 /* YBPermissionManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC3E08141FCE5EE100C0D495 /* YBPermissionManagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3E08211FCE5EE100C0D495 /* Build configuration list for PBXNativeTarget "YBPermissionManagerDemoTests" */;
+			buildPhases = (
+				EC3E08111FCE5EE100C0D495 /* Sources */,
+				EC3E08121FCE5EE100C0D495 /* Frameworks */,
+				EC3E08131FCE5EE100C0D495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC3E08171FCE5EE100C0D495 /* PBXTargetDependency */,
+			);
+			name = YBPermissionManagerDemoTests;
+			productName = YBPermissionManagerDemoTests;
+			productReference = EC3E08151FCE5EE100C0D495 /* YBPermissionManagerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC3E07F51FCE5EE000C0D495 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = asance;
+				TargetAttributes = {
+					EC3E07FC1FCE5EE000C0D495 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EC3E08141FCE5EE100C0D495 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC3E07FC1FCE5EE000C0D495;
+					};
+				};
+			};
+			buildConfigurationList = EC3E07F81FCE5EE000C0D495 /* Build configuration list for PBXProject "YBPermissionManagerDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC3E07F41FCE5EE000C0D495;
+			productRefGroup = EC3E07FE1FCE5EE000C0D495 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC3E07FC1FCE5EE000C0D495 /* YBPermissionManagerDemo */,
+				EC3E08141FCE5EE100C0D495 /* YBPermissionManagerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3E07FB1FCE5EE000C0D495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3E080D1FCE5EE100C0D495 /* LaunchScreen.storyboard in Resources */,
+				EC3E080A1FCE5EE100C0D495 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3E08131FCE5EE100C0D495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36554808555B60C5AE07ABAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF36FA434D5704D7C76ADCD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBPermissionManagerDemo/Pods-YBPermissionManagerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D197E429FEA371C835D46BE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBPermissionManagerDemo/Pods-YBPermissionManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC3E07F91FCE5EE000C0D495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3E08331FCE5F1D00C0D495 /* YBPermissionLocationWorker.m in Sources */,
+				EC3E08311FCE5F1D00C0D495 /* YBPermissionBeLimitedView.m in Sources */,
+				EC3E08051FCE5EE100C0D495 /* ViewController.m in Sources */,
+				EC3E08341FCE5F1D00C0D495 /* YBPermissionManager.m in Sources */,
+				EC3E08361FCE5F1D00C0D495 /* YBPermissionVideoWorker.m in Sources */,
+				EC3E08351FCE5F1D00C0D495 /* YBPermissionPhotoWorker.m in Sources */,
+				EC3E08101FCE5EE100C0D495 /* main.m in Sources */,
+				EC3E08321FCE5F1D00C0D495 /* YBPermissionContactWorker.m in Sources */,
+				EC3E08021FCE5EE100C0D495 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3E08111FCE5EE100C0D495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3E081A1FCE5EE100C0D495 /* YBPermissionManagerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC3E08171FCE5EE100C0D495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC3E07FC1FCE5EE000C0D495 /* YBPermissionManagerDemo */;
+			targetProxy = EC3E08161FCE5EE100C0D495 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC3E080B1FCE5EE100C0D495 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3E080C1FCE5EE100C0D495 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC3E081C1FCE5EE100C0D495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC3E081D1FCE5EE100C0D495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC3E081F1FCE5EE100C0D495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D577732074BCA49C8E7B85 /* Pods-YBPermissionManagerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLQUF9KEG2;
+				INFOPLIST_FILE = YBPermissionManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asance.YBPermissionManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC3E08201FCE5EE100C0D495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA0757A96B05250996B6F6A /* Pods-YBPermissionManagerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLQUF9KEG2;
+				INFOPLIST_FILE = YBPermissionManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asance.YBPermissionManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC3E08221FCE5EE100C0D495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLQUF9KEG2;
+				INFOPLIST_FILE = YBPermissionManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asance.YBPermissionManagerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBPermissionManagerDemo.app/YBPermissionManagerDemo";
+			};
+			name = Debug;
+		};
+		EC3E08231FCE5EE100C0D495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLQUF9KEG2;
+				INFOPLIST_FILE = YBPermissionManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asance.YBPermissionManagerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBPermissionManagerDemo.app/YBPermissionManagerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC3E07F81FCE5EE000C0D495 /* Build configuration list for PBXProject "YBPermissionManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3E081C1FCE5EE100C0D495 /* Debug */,
+				EC3E081D1FCE5EE100C0D495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3E081E1FCE5EE100C0D495 /* Build configuration list for PBXNativeTarget "YBPermissionManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3E081F1FCE5EE100C0D495 /* Debug */,
+				EC3E08201FCE5EE100C0D495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3E08211FCE5EE100C0D495 /* Build configuration list for PBXNativeTarget "YBPermissionManagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3E08221FCE5EE100C0D495 /* Debug */,
+				EC3E08231FCE5EE100C0D495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC3E07F51FCE5EE000C0D495 /* Project object */;
+}
