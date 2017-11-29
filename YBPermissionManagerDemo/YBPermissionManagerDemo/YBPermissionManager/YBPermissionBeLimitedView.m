@@ -228,9 +228,6 @@
     if(0==appName.length){
         NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
         appName = [infoDictionary objectForKey:@"CFBundleDisplayName"];
-        if(0==appName.length){
-            appName = @"AppName";
-        }
     }
     _appName = [appName copy];
 }
